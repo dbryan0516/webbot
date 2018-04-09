@@ -4,12 +4,10 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.io.FileNotFoundException;
-
 public class WebBot {
 
-    private static final String siteUrl      = "";
-    private static final String siteHeader   = "";
+    private static final String siteUrl      = "https://sites.google.com/ncsu.edu/pepperpot/home";
+    private static final String siteHeader   = "PepperPot";
 
     private static final String ALPHA_NUMERIC_STRING = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     public static String randomAlphaNumeric(int count) {
@@ -21,7 +19,7 @@ public class WebBot {
         return builder.toString();
     }
 
-    public static void main(String [] args) throws FileNotFoundException, InterruptedException {
+    public static void main(String [] args) {
         runMe();
     }
 
